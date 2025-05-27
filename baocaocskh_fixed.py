@@ -313,7 +313,7 @@ with tab2:
             st.write(f"- Tỷ lệ trễ hạn trung bình: {avg_late*100:.6f}%")
 
         # Biểu đồ kết quả tổng hợp toàn bộ điện lực
-        fig_total = plot_bar(df_time, 'Điện lực', 'Tỷ lệ trễ hạn', "Kết quả giải quyết đúng hạn", "Tỷ lệ (%)", percent=True, color='mediumvioletred')
+        fig_total = plot_bar(df_time, 'Điện lực', 'Tỷ lệ trễ hạn', "Kết quả giải quyết trễ hạn", "Tỷ lệ (%)", percent=True, color='mediumvioletred')
         st.pyplot(fig_total)
 
         # Top 3 và Bottom 3
